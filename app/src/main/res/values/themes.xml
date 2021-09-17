@@ -1,0 +1,20 @@
+<resources>
+
+    <style name="Theme.Coin" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/blue</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:windowBackground">@color/cream</item>
+        <item name="font">@font/roboto</item>
+
+    </style>
+
+    <style name="headingStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_17sdp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

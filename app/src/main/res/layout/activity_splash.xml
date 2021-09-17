@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="com.app.coin.utils.Status" />
+
+        <variable
+            name="viewModel"
+            type="com.app.coin.viewmodels.SplashViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_80sdp"/>
+
+        <ImageView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/app_icon"
+            android:contentDescription="@string/app_icon" />
+
+        <ProgressBar
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:indeterminateTint="@color/blue"
+            android:visibility="@{viewModel.coin.status == Status.LOADING ? View.VISIBLE : View.INVISIBLE, default = invisible}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="@{viewModel.coin.message}"
+            android:textColor="@color/blue"
+            android:visibility="@{viewModel.coin.status == Status.ERROR ? View.VISIBLE : View.INVISIBLE, default = invisible}" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:onClick="@{() -> viewModel.retry()}"
+            android:text="@string/retry"
+            android:visibility="@{viewModel.coin.status == Status.ERROR ? View.VISIBLE : View.INVISIBLE, default = invisible}" />
+
+
+    </LinearLayout>
+
+</layout>

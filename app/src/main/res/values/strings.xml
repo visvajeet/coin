@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Coin</string>
+    <string name="my_dashboard">My Dashboard</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="subtitle">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print.</string>
+    <string name="available_to_buy">Available to buy</string>
+    <string name="see_all">See all</string>
+    <string name="home">Home</string>
+    <string name="wish_list">Wishlist</string>
+    <string name="scan">Scan</string>
+    <string name="collection">Collection</string>
+    <string name="profile">Profile</string>
+    <string name="coming_soon">Coming Soon..</string>
+    <string name="retry">Retry</string>
+    <string name="sell">Sell</string>
+    <string name="app_icon">App Icon</string>
+</resources>

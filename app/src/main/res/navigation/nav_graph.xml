@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        tools:layout="@layout/fragment_home"
+        android:id="@+id/homeFragment"
+        android:name="com.app.coin.ui.fragments.HomeFragment"
+        android:label="Home Fragment"/>
+
+    <fragment
+        tools:layout="@layout/fragment_blank"
+        android:id="@+id/wishlistFragment"
+        android:name="com.app.coin.ui.fragments.BlankFragment"
+        android:label="Wishlist Fragment"/>
+
+    <fragment
+        tools:layout="@layout/fragment_blank"
+        android:id="@+id/scanFragment"
+        android:name="com.app.coin.ui.fragments.BlankFragment"
+        android:label="Scan Fragment"/>
+
+    <fragment
+        tools:layout="@layout/fragment_blank"
+        android:id="@+id/collectionFragment"
+        android:name="com.app.coin.ui.fragments.BlankFragment"
+        android:label="Collection Fragment"/>
+
+    <fragment
+        tools:layout="@layout/fragment_blank"
+        android:id="@+id/profileFragment"
+        android:name="com.app.coin.ui.fragments.BlankFragment"
+        android:label="Profile Fragment"/>
+
+
+
+
+
+
+</navigation>
